@@ -1,0 +1,284 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+	\vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+	\item\small{
+		{#1 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\classesList}[4]{
+	\item\small{
+		{#1 #2 #3 #4 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\resumeSubheading}[4]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & \textbf{\small #2} \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textit{\small#1} & \textit{\small #2} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+	\item
+	\begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+		\small#1 & \textbf{\small #2}\\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+	
+	%----------HEADING----------
+	% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+	%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+	% \end{tabular*}
+	
+	\begin{center}
+		{\Huge \scshape Chenxi Zhang} \\ \vspace{1pt}
+		%123 Street Name, Town, State 12345 \\ \vspace{1pt}
+		\small \raisebox{-0.1\height}\faPhone\ +46 07-6895-0989 ~ \href{mailto:ch7210zh-s@student.lu.se}{\raisebox{-0.2\height}\faEnvelope\  \underline{ch7210zh-s@student.lu.se}} ~ 
+		%\href{https://linkedin.com/in//}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/username}}  ~
+		\href{https://github.com/Elison-debug}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/Elison-debug}}
+		\vspace{-8pt}
+	\end{center}
+	
+	
+	%-----------EDUCATION-----------
+	\section{Education}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{Lund University}{September 2024 -- present}
+	{Msc.in Integrated Circuits Design, Lunds Tekniska Högskola(LTH)}{Lund, Sweden}
+	
+	\resumeSubheading
+	{Southern University of Science and Technology(SUSTech)}{August 2019 -- June 2023}
+	{B.Eng.in Microelectronics Science and Engineering, School of Microelectronics; GPA: 3.34/4.0}{ShenZhen, China}
+	\resumeSubHeadingListEnd
+	
+
+	%-----------PROGRAMMING SKILLS-----------
+	\section{SKILL LIST}
+	\begin{itemize}[leftmargin=0.15in, label={}]
+		\small{\item{
+				\textbf{Languages}{: Verilog,System verilog,VHDL,C/C++,Java,Python,Matlab,TCl,Cmake} \\
+				\textbf{EDA Tools}{:Vivado, Modelsim, Cadence Virtuso, Genus, Innovus, Spectre, Calibre, Silvaco/Sentaurus, HSPICE, COMSOL, Matlab,etc. } \\
+		}}
+	\end{itemize}
+	\vspace{-17pt}
+	
+	
+	%-----------EXPERIENCE-----------
+	\section{INTERNSHIP}
+	\resumeSubHeadingListStart
+	\vspace{1pt}
+	\resumeSubheading
+	{Low Power MCU Design Based on Risc-V Architecture}{June 2025 -- Augest 2025}
+	{Digital Circuit R\&D Post, Marvel Semiconductor Co.,Ltd.,}{Shanghai, China}
+	\resumeItemListStart
+	\resumeItem{to be fullfilled.}
+
+	\resumeItemListEnd
+	\vspace{2pt}
+	
+	\resumeSubheading
+	{Optical Computing-In-Memory(CIM) Video Processing Chips Design}{June 2023 -- October 2023}
+	{Research Assistant, School of Microelectronic, SUSTech}{Shenzhen, China}
+	\resumeItemListStart
+	\resumeItem{Design peripheral control circuits for advanced Optoelectronic memristor arrays used for Spiking Neural Network,SNN.}
+	\resumeItem{Design ASIC Chips which process signal from the sensor to finish SSN computation and analyse the efficiency, accuracy and power consumption to assess array performance.}
+	
+	\resumeItemListEnd
+	\vspace{2pt}
+	
+	\resumeSubheading
+	{Low Power Vision Processing Chip Design Based on Risc-V Architecture}{June 2022 -- October 2022}
+	{Digital Circuit R\&D Post, Pixelcore shanghai Co., Ltd.}{Shanghai, China}
+	\resumeItemListStart
+	\resumeItem{Analysing the Hummingbird 200 series (licensed) three-stage pipeline Risc-V processor}
+	\resumeItem{Analyse the algorithms to be deployed and improve the design of the three-level pipeline to increase the computational efficiency of special requirements.}
+	\resumeItem{Add an extra convolutional acceleration kernel to improve image processing efficiency.}
+	\resumeItem{Design exception handling module to cope with all kinds of external and internal errors, increase debugging core}   
+	\resumeItemListEnd
+	\vspace{2pt}
+	
+	\resumeSubHeadingListEnd
+	\vspace{-15pt}
+	
+	
+	%-----------PROJECTS-----------
+	\section{PROJECT EXPERIENCE}
+	\vspace{-4pt}
+	\resumeSubHeadingListStart
+
+	\resumeProjectHeading
+	{\textbf{An convolution acceleration core IP design} $|$ \emph{Cadence Virtuoso}}{Spring 2022}
+	\resumeItemListStart
+	\resumeItem{Adopted the array multiplier architecture with 16 ANDs, 4 HAs and 8 FAs.}
+	\resumeItem{Designed the circuit and simulated in schematic level.}
+	\resumeItem{Implemented the physical layout and verified the design through post-layout simulation.}
+	\resumeItem{Improved circuitry and layout for optimal area and latency}
+	\resumeItem{Achieved a final layout area of 771.0059 nm$^{2}$ (L=53.86 nm and W=14.315 nm), which is the smallest of this project.}
+	\resumeItemListEnd
+
+	\resumeProjectHeading
+	{\textbf{An Area-Delay 4×4-Bits Array Multiplier in 180nm CMOS Technology} $|$ \emph{Cadence Virtuoso}}{Spring 2022}
+	\resumeItemListStart
+	\resumeItem{Adopted the array multiplier architecture with 16 ANDs, 4 HAs and 8 FAs.}
+	\resumeItem{Designed the circuit and simulated in schematic level.}
+	\resumeItem{Implemented the physical layout and verified the design through post-layout simulation.}
+	\resumeItem{Improved circuitry and layout for optimal area and latency}
+	\resumeItem{Achieved a final layout area of 771.0059 nm$^{2}$ (L=53.86 nm and W=14.315 nm), which is the smallest of this project.}
+	\resumeItemListEnd
+	
+	\vspace{-10pt}
+	\resumeProjectHeading
+	{\textbf{A Differential Input Single-Ended Output Op-Amp in 180nm CMOS Technology} $|$ \emph{Cadence Virtuoso}}{Fall 2022}
+	\resumeItemListStart
+	\resumeItem{Implemented a two-stage op-amp structure consisting of an OTA topology and a push-pull inverter.}
+	\resumeItem{Fine-tuned the transistor parameters and capacitance and resistance values in the compensation circuit.}
+	\resumeItem{Fulfilled all demands for differential and common mode gain, phase margin, slew rate, and voltage swing.}
+	\resumeItemListEnd 
+	
+	
+	
+	\vspace{-10pt}
+	\resumeProjectHeading
+	{\textbf{A 5-stage pipeline Processor based on 32-Bits ISA of ARMv7} $|$ \emph{Verilog, Vivado}}{Fall 2021}
+	\resumeItemListStart
+	\resumeItem{Constructed each module separately and verified them by specific testbench.}
+	\resumeItem{Assembled the processor through definition of wires and instantiation of modules in a top core.}
+	\resumeItem{Upgraded the processor by adding 5-stage pipeline.}
+	\resumeItem{Upgraded the processor by adding an improved sequential multiplier module and modifying other modules accordingly.}
+	\resumeItem{Customized the instruction flow to check all possible conditions.}
+	\resumeItemListEnd 
+	
+	\vspace{-10pt}
+	\resumeProjectHeading
+	{\textbf{Fabrication of Semiconductor Capacitors Array in Clean Room} $|$ \emph{Experiments in Clean Room}}{Fall 2021}
+	\resumeItemListStart
+	\resumeItem{Drew the layout of the semiconductor capacitors.}
+	\resumeItem{Performed a series processing of cleaning, exposure, development, etching, epitaxy, deposition, and rapid thermal annealing on silicon wafers to fabricate capacitors.}
+	\resumeItem{Analyzed the c-v curve of capacitors by four-probe stage and the surface structure by SEM.}
+	\resumeItemListEnd
+	
+	\vspace{-10pt}
+	\resumeProjectHeading
+	{\textbf{High refresh rate spherical rotating display} $|$ \emph{C,Assembled language}}{Summer 2021}
+	\resumeItemListStart
+	\resumeItem{Design motor control circuits, speed detection circuits.}
+	\resumeItem{soldering high-density double-sided complementary WS2812 lamp beads.}
+	\resumeItem{Adopts 51 MCU and control the output PWM signal efficiently and precisely.}
+	\resumeItem{Detecting, recognising and tracking the position of the human eye using Opencv with the Raspberry Pi}
+	\resumeItem{Adjusts the display output image in real time according to the position of the human eye for distortion adjustment.}
+	\resumeItem{Limited by Raspberry Pi and 51MCU, ended up with up to 24 fps (110fps PC direct drive)}
+	\resumeItemListEnd
+	\resumeSubHeadingListEnd
+	\vspace{-15pt}
+	
+	
+	
+	%-----------INVOLVEMENT---------------
+	\section{Honors and Awards}
+	\vspace{1pt}
+	\resumeSubHeadingListStart
+	\resumeSubheading{Scholarship}{}	{}{}
+	\vspace{-15pt}
+	\resumeItemListStart   
+	\resumeItem{Nation 2st Prize, Contemporary Undergraduate Mathematical Contest in Modeling (China Society for Industrial and Applied Mathematics)\hfill{\emph{2022}}}\\
+	\resumeItem{National Encouragement Scholarship (Ministry of Education of the P.R.C.) \hfill{\emph{2020-2022}}}\\
+	\resumeItem{Second Prize of Freshman Scholarship(TOP 5\%,Southern University of Science and Technology)\hfill{\emph{2019}}}\\
+	
+	\resumeItemListEnd             
+	\resumeSubHeadingListEnd
+	
+	
+\end{document} 
