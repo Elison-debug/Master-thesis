@@ -149,9 +149,8 @@
 	\section{SKILL LIST}
 	\begin{itemize}[leftmargin=0.15in, label={}]
 		\small{\item{
-				\textbf{HDL}{:Verilog, SystemVerilog, VHDL} \\
-				\textbf{Programming}{:C/C++, Python, TCL, CMake} \\
-				\textbf{EDA Tools}{:Vivado, Modelsim, Cadence Virtuoso, Genus, Innovus, Spectre, Calibre, Silvaco/Sentaurus, HSPICE, COMSOL } \\
+				\textbf{Languages}{:Verilog,System verilog,VHDL,C/C++,Java,Python,Matlab,TCl,Cmake} \\
+				\textbf{EDA Tools}{:Vivado, Modelsim, Cadence Virtuso, Genus, Innovus, Spectre, Calibre, Silvaco/Sentaurus, HSPICE, COMSOL, Matlab,etc. } \\
 		}}
 	\end{itemize}
 	\vspace{-17pt}
@@ -161,6 +160,14 @@
 	\section{INTERNSHIP}
 	\resumeSubHeadingListStart
 	\vspace{1pt}
+	\resumeSubheading
+	{Low Power MCU Design Based on Risc-V Architecture}{June 2025 -- Augest 2025}
+	{Digital Circuit R\&D Post, Marvel Semiconductor Co.,Ltd.,}{Shanghai, China}
+	\resumeItemListStart
+	\resumeItem{to be fullfilled.}
+
+	\resumeItemListEnd
+	\vspace{2pt}
 	
 	\resumeSubheading
 	{Optical Computing-In-Memory(CIM) Video Processing Chips Design}{June 2023 -- October 2023}
@@ -176,7 +183,7 @@
 	{Low Power Vision Processing Chip Design Based on Risc-V Architecture}{June 2022 -- October 2022}
 	{Digital Circuit R\&D Post, Pixelcore shanghai Co., Ltd.}{Shanghai, China}
 	\resumeItemListStart
-	\resumeItem{Verify the Hummingbird 200 series (licensed) four-stage pipelined Risc-V processor add a bus for it.}
+	\resumeItem{Analysing the Hummingbird 200 series (licensed) three-stage pipeline Risc-V processor}
 	\resumeItem{Analyse the algorithms to be deployed and improve the design of the three-level pipeline to increase the computational efficiency of special requirements.}
 	\resumeItem{Add an extra convolutional acceleration kernel to improve image processing efficiency.}
 	\resumeItem{Design exception handling module to cope with all kinds of external and internal errors, increase debugging core}   
@@ -193,26 +200,35 @@
 	\resumeSubHeadingListStart
 
 	\resumeProjectHeading
-	{\textbf{A Convolution Acceleration Core IP Design} $|$ \emph{ASIC Flow}}{Spring 2025}
+	{\textbf{An convolution acceleration core IP design} $|$ \emph{Cadence Virtuoso}}{Spring 2022}
 	\resumeItemListStart
-	\resumeItem{Based on the Pulpino project, modify its clock  and rewrite memory mapping.}
-	\resumeItem{Design a convolutional acceleration kernel under apb bus that implements multi-stripe and multi-padding convolution.}
-	\resumeItem{Synthesise and verify the design at a 100MHz clock frequency.}
-	\resumeItem{Perform layout on the design and verify DRC, ERC, LVS,and DRV, then sign-off.}
-	\resumeItem{Perform post-layout simulation on the properly generated netlist, SPEF and SDF files}
-	\resumeItem{Verified with directed and random testbenches, achieved 100MHz target frequency with no timing violations.}
+	\resumeItem{Adopted the array multiplier architecture with 16 ANDs, 4 HAs and 8 FAs.}
+	\resumeItem{Designed the circuit and simulated in schematic level.}
+	\resumeItem{Implemented the physical layout and verified the design through post-layout simulation.}
+	\resumeItem{Improved circuitry and layout for optimal area and latency}
+	\resumeItem{Achieved a final layout area of 771.0059 nm$^{2}$ (L=53.86 nm and W=14.315 nm), which is the smallest of this project.}
 	\resumeItemListEnd
-	
-	\vspace{-10pt}
+
 	\resumeProjectHeading
 	{\textbf{An Area-Delay 4×4-Bits Array Multiplier in 180nm CMOS Technology} $|$ \emph{Cadence Virtuoso}}{Spring 2022}
 	\resumeItemListStart
 	\resumeItem{Adopted the array multiplier architecture with 16 ANDs, 4 HAs and 8 FAs.}
 	\resumeItem{Designed the circuit and simulated in schematic level.}
 	\resumeItem{Implemented the physical layout and verified the design through post-layout simulation.}
-	\resumeItem{Improved circuitry and layout for optimal area and latency.}
+	\resumeItem{Improved circuitry and layout for optimal area and latency}
 	\resumeItem{Achieved a final layout area of 771.0059 nm$^{2}$ (L=53.86 nm and W=14.315 nm), which is the smallest of this project.}
 	\resumeItemListEnd
+	
+	\vspace{-10pt}
+	\resumeProjectHeading
+	{\textbf{A Differential Input Single-Ended Output Op-Amp in 180nm CMOS Technology} $|$ \emph{Cadence Virtuoso}}{Fall 2022}
+	\resumeItemListStart
+	\resumeItem{Implemented a two-stage op-amp structure consisting of an OTA topology and a push-pull inverter.}
+	\resumeItem{Fine-tuned the transistor parameters and capacitance and resistance values in the compensation circuit.}
+	\resumeItem{Fulfilled all demands for differential and common mode gain, phase margin, slew rate, and voltage swing.}
+	\resumeItemListEnd 
+	
+	
 	
 	\vspace{-10pt}
 	\resumeProjectHeading
@@ -224,7 +240,27 @@
 	\resumeItem{Upgraded the processor by adding an improved sequential multiplier module and modifying other modules accordingly.}
 	\resumeItem{Customized the instruction flow to check all possible conditions.}
 	\resumeItemListEnd 
-
+	
+	\vspace{-10pt}
+	\resumeProjectHeading
+	{\textbf{Fabrication of Semiconductor Capacitors Array in Clean Room} $|$ \emph{Experiments in Clean Room}}{Fall 2021}
+	\resumeItemListStart
+	\resumeItem{Drew the layout of the semiconductor capacitors.}
+	\resumeItem{Performed a series processing of cleaning, exposure, development, etching, epitaxy, deposition, and rapid thermal annealing on silicon wafers to fabricate capacitors.}
+	\resumeItem{Analyzed the c-v curve of capacitors by four-probe stage and the surface structure by SEM.}
+	\resumeItemListEnd
+	
+	\vspace{-10pt}
+	\resumeProjectHeading
+	{\textbf{High refresh rate spherical rotating display} $|$ \emph{C,Assembled language}}{Summer 2021}
+	\resumeItemListStart
+	\resumeItem{Design motor control circuits, speed detection circuits.}
+	\resumeItem{soldering high-density double-sided complementary WS2812 lamp beads.}
+	\resumeItem{Adopts 51 MCU and control the output PWM signal efficiently and precisely.}
+	\resumeItem{Detecting, recognising and tracking the position of the human eye using Opencv with the Raspberry Pi}
+	\resumeItem{Adjusts the display output image in real time according to the position of the human eye for distortion adjustment.}
+	\resumeItem{Limited by Raspberry Pi and 51MCU, ended up with up to 24 fps (110fps PC direct drive)}
+	\resumeItemListEnd
 	\resumeSubHeadingListEnd
 	\vspace{-15pt}
 	
